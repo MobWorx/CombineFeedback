@@ -14,10 +14,7 @@ let package = Package(
         .library(name: "CombineFeedbackUI", targets: ["CombineFeedbackUI"]),
     ],
     dependencies: [
-        .package(
-            url: "https://github.com/pointfreeco/swift-case-paths.git",
-            from: Version(0, 1, 3)
-        )
+        .package(url: "https://github.com/pointfreeco/swift-case-paths", from: "0.1.3"),
     ],
     targets: [
         .target(name: "CombineFeedback", dependencies: ["CasePaths"]),
